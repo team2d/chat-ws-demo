@@ -405,7 +405,7 @@ function createChatMessage(msg,user,now,me){
     (function webSocketConnect(){
         //if (window.location.protocol === "https:") window.location.href = 'http://' + window.location.host;
         let io=ioLib(api,hashHex128);
-        let ws = new WebSocket('ws://' + window.location.host + "/wsApi");
+        let ws = new WebSocket('wss://' + window.location.host + "/wsApi");
         ws.binaryType = "arraybuffer";
         ws.api = io.routeApiOutput(ws);
         ws.onopen = (event) => ws.api.connect(document.location.href)
