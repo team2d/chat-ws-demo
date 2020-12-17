@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+}
+html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+.main {
+    width: 100%;
+    flex: auto;
+    display: flex;
+}
+.inner {
+    width: 100%;
+    display: flex;
+}
+.sidebar {
+    flex: 0 0 250px;
+    display: flex;
+    flex-flow: column;
+}
+.content {
+    min-height: 300px;
+    flex: 1 1 360px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content, .sidebar {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.sidebar.left {
+    background-color: #f0f0f0;
+}
+.sidebar.right {
+    background-color: #f0f0f0;
+}
+.nickname {
+    width: 183px;
+}
+.users p {
+    padding-left: 10px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+header, main, footer {
+    flex-shrink: 0;
+}
+.chats {
+    flex: 1 0 auto;
+    flex-basis: 0px;
+    overflow-y: auto;
+}
+.messageEdit {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+.messageEdit textarea {
+    width: 100%;
+}
+.channels {
+    padding: 10px;
+    cursor: pointer;
+}
+.users {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.currChannel p {
+    display: inline-block;
+}
+.channels p, .currChannel p {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------ Chat Screen ------ */
+
+
+
+.image {
+    clear:both;
+    float:left;
+    height: 160px;
+    width: 80px;
+    text-align:center;
+    overflow: hidden;
+}
+
+.image img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.body {
+    text-align:center;
+    width: 40%;
+    display: block;
+    margin:0px auto 650px;
+    background-color: #ffffff;
+    color: #637277;
+}
+
+.chats {
+    list-style-type: none;
+    margin-top:10px;
+}
+
+.me {
+    clear:both;
+    float:left;
+    margin-bottom:10px;
+}
+
+.you {
+    clear:both;
+    float:right;
+    margin-bottom:10px;
+}
+
+.you .image{
+    float:right;
+}
+
+.chats .me p {
+    text-align:left;
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom:30px;
+    padding: 25px 34px;
+    min-width: 160px;
+    min-height: 10px;
+    max-width: 510px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px #E3E4E6;
+    color: #637277;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.chats .you p {
+    text-align:left;
+    float: left;
+    display: inline-block;
+    margin-right:20px;
+    margin-bottom:30px;
+    padding: 25px 34px;
+    min-width: 160px;
+    min-height: 10px;
+    max-width: 510px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px #E3E4E6;
+    color: #637277;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.image b {
+    overflow: hidden;
+    display: block;
+    clear: both;
+    padding-top: 7px;
+}
+
+.image i{
+    font-size: 12px;
+    line-height: 1.2;
+    display: block;
+    opacity: 0.8;
+    padding-top: 4px;
+}

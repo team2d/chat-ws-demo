@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messager</title>
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/aes.js"></script>
+    <script type="text/javascript" src="io.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="inner">
+        <div class="sidebar left">
+            <div class="state">State:
+                <span class="connState"> Connecting...</span>
+                <span class="connIcon glyphicon glyphicon-refresh"></span>
+            </div>
+            <div class="channel">Current channel:
+                <span class="currChannel">
+                    no
+                </span>
+            </div>
+            <div class="newChannel">
+                <input class="newChennelName" placeholder="new channel name">
+                <button type="button" class="btn newChennel">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div>Channels:</div>
+            <div class="channels">
+
+            </div>
+        </div>
+        <div class="content">
+            <section class="chats">
+
+            </section>
+            <footer class="messageEdit">
+                <textarea></textarea>
+                <button class="btn">
+                    <span class="glyphicon glyphicon-send"></span>
+                </button>
+            </footer>
+        </div>
+        <div class="sidebar right">
+            <p>Nickname:</p>
+            <div>
+                <input class="nickname">
+                <button type="button" class="btn setnickname">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="users">
+                <section class="usersList">
+
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script language="javascript" src="js/index.js"></script>
+</body>
+</html>

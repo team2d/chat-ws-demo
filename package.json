@@ -1,0 +1,23 @@
+{
+  "name": "node_aes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "nedb": "^1.8.0",
+    "node-forge": "^0.7.6",
+    "rpc-websockets": "^4.3.5",
+    "uuid": "^3.3.2",
+    "ws": "^6.1.2"
+  }
+}
