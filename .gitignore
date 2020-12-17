@@ -1,6 +1,4 @@
 .idea/
 .git/
-node_modules/
 chat.db
-cryptMessanger.rar
 package-lock.json
